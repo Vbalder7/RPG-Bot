@@ -48,9 +48,9 @@ Now it is Possible to generate new character stats using the -randchar command
 To deploy this project run
 
 Create a folder in the root directory called `secrets`.
-inside there should be a file named `token` with no file extension
-inside place your bot token. if you wish to deploy the bot 24/7 on your own
+Inside there should be a file named `token` with no file extension
+You should place your bot token in this file. If you wish to deploy the bot 24/7 on your own.
 I suggest using heroku as the Procfile,requirements.txt, and runtime.txt are provided.
-You need only make a private repository on GitHub add all files to the repository and then build the app with heroku.
+You need only make a private repository on GitHub add all files to the repository, and then build the app with heroku.
 once that is done you can go to the resources tab on the heroku dashboard and refresh the page.
 then turn on the choice that says bot.py
