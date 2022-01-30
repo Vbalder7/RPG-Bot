@@ -54,3 +54,5 @@ I suggest using heroku as the Procfile,requirements.txt, and runtime.txt are pro
 You need only make a private repository on GitHub add all files to the repository, and then build the app with heroku.
 once that is done you can go to the resources tab on the heroku dashboard and refresh the page.
 then turn on the choice that says bot.py
+
+Or you could just add to server [Add to server](https://discord.com/api/oauth2/authorize?client_id=722335475976634539&permissions=8&scope=bot%20applications.commands)
