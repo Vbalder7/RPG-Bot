@@ -17,7 +17,7 @@ Friday, January 28, 2022.
 ### Version (0.1.0)
 
 Minimal functionality. Only able to go online
-nothing more.
+nothing more. Has Error handling
 
 ### Version (0.1.1)
 
