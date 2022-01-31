@@ -93,3 +93,15 @@ Now it is Possible to generate new character stats using the -randchar command
 ### Version (0.1.4)
 
 Added the ability to roll Fate Core dice with `+ = +1` `- = -1` and the empty side is represented as a 0 the syntax is -r fc +mod  ex:`-r fc +3` output ex:`-1, -1, +1, 0, +3`
+
+### Deployment
+
+Create a folder in the root directory called `secrets`.
+Inside there should be a file named `token` with no file extension
+You should place your bot token in this file. If you wish to deploy the bot 24/7 on your own.
+I suggest using heroku as the Procfile,requirements.txt, and runtime.txt are provided.
+You need only make a private repository on GitHub add all files to the repository, and then build the app with heroku.
+once that is done you can go to the resources tab on the heroku dashboard and refresh the page.
+then turn on the choice that says bot.py
+
+Or you could just add to server [Add to server](https://discord.com/api/oauth2/authorize?client_id=722335475976634539&permissions=8&scope=bot%20applications.commands)
