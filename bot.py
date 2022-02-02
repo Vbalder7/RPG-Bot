@@ -11,7 +11,7 @@ with open('secrets/token','r',encoding='utf-8') as f:
     token = f.read().strip()
     
 bot = lb.BotApp(token = token,
-                prefix='$',
+                prefix='$'
                 )
 
 scheduler = AsyncIOScheduler()
@@ -27,6 +27,8 @@ async def on_error(event: lb.CommandErrorEvent) -> None:
         await event.context.respond("I'm sorry, but I cannot find that command.")
     elif isinstance(exception, lb.NotEnoughArguments):
         await event.context.respond("You have not input all the required arguments.")
+    elif isinstance (exception, lb.LightbulbError):
+        await event.context.respond("I have errored and cannot get up!")
     else:
         raise exception
 
