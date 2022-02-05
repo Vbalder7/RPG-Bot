@@ -3,21 +3,21 @@
 
 We are dedicated to making a discord bot
 that is used for any TTRPG (Table Top Role Playing Game),
-and since we are all facing these troubling times we might find
-ourselves playing these games online. So we
+and since we are all facing these troubling times we might find 
+ourselves playing these games online. So we 
 decided to make it Easier.
 
+
+
+
 ## Current Version
-
-RPG Bot Is Currently In Version (0.1.3), as of
-Friday, January 28, 2022.
-
-## Changelog
+RPG Bot Is Currently In Version (0.1.3), as of 
+Friday, January 28, 2022.## Changelog
 
 ### Version (0.1.0)
 
 Minimal functionality. Only able to go online
-nothing more. Has Error handling
+nothing more.
 
 ### Version (0.1.1)
 
@@ -94,14 +94,19 @@ Now it is Possible to generate new character stats using the -randchar command
 
 Added the ability to roll Fate Core dice with `+ = +1` `- = -1` and the empty side is represented as a 0 the syntax is -r fc +mod  ex:`-r fc +3` output ex:`-1, -1, +1, 0, +3`
 
-### Deployment
+### Version (0.1.4.dev100)
+
+Added spell lookup command, but the file containing all the spell data is not complete
+so you will get a lot of filler text
+## Deployment
+
+To deploy this project run
 
 Create a folder in the root directory called `secrets`.
-Inside there should be a file named `token` with no file extension
-You should place your bot token in this file. If you wish to deploy the bot 24/7 on your own.
+inside there should be a file named `token` with no file extension
+inside place your bot token. if you wish to deploy the bot 24/7 on your own
 I suggest using heroku as the Procfile,requirements.txt, and runtime.txt are provided.
-You need only make a private repository on GitHub add all files to the repository, and then build the app with heroku.
+You need only make a private repository on GitHub add all files to the repository and then build the app with heroku.
 once that is done you can go to the resources tab on the heroku dashboard and refresh the page.
 then turn on the choice that says bot.py
 
-Or you could just add to server [Add to server](https://discord.com/api/oauth2/authorize?client_id=722335475976634539&permissions=8&scope=bot%20applications.commands)
