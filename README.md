@@ -1,7 +1,9 @@
 
 # RPG Bot
 
-![logo](resources/pictures/logo.png){width="800" height="600" style="display: block; margin: 0 auto"}
+<p align="center">
+    <img src="resources/pictures/logo.png" alt="Image" width="800" height="600" />
+</p>
 
 We are dedicated to making a discord bot
 that is used for any TTRPG (Table Top Role Playing Game),
