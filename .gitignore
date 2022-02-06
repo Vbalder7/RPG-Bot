@@ -172,3 +172,4 @@ pip-selfcheck.json
 secrets
 .venv
 __pycache__
+*.zip
