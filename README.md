@@ -2,7 +2,7 @@
 # RPG Bot
 
 <p align="center">
-    <img src="resources/pictures/logo.png" alt="Image" width="800" height="600" />
+    <img src="resources/pictures/logo.png" alt="Image" width="200" height="200" />
 </p>
 
 We are dedicated to making a discord bot
