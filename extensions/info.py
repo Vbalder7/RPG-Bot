@@ -60,6 +60,11 @@ decided to make it Easier."""
         .set_author(name="Information")
         .set_footer(f"Requested by {member.display_name}", icon=member.avatar_url)
         .add_field("Authors",(f"<@{guild.get_member(OWNER_ID)}>"))
+        .add_field(
+            "License",
+            '[BSD 3-Clause "New" or "Revised" License]'
+            f"(https://github.com/Vbalder7/RPG-Bot/blob/main/LICENSE)",
+        )
     )
 
 @info_group.child
