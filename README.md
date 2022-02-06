@@ -60,7 +60,7 @@ we use [d20](https://pypi.org/project/d20/) for our dice rolling.
 
 ## Examples
 
-```python
+```py
 >>> r = roll("4d6kh3")  # highest 3 of 4 6-sided dice
 >>> r.total
 14
