@@ -26,7 +26,7 @@
 #OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 #OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import lightbulb,d20,random,json
+import lightbulb,d20,random,json,requests
 from functions import tital
 from hikari import Guild
 
@@ -87,36 +87,58 @@ async def cmd_randchar(ctx) -> None:
 @lightbulb.command('spell', 'Finds spell info')
 @lightbulb.implements(lightbulb.PrefixCommand)
 async def spell_lookup(ctx) -> None:
+    
+    #defining variables with the input for the command
     op1,op2,op3,op4,op5 = [ctx.options.op1,
                            ctx.options.op2,
                            ctx.options.op3,
                            ctx.options.op4,
                            ctx.options.op5]
-    with open('resources/json/spells.json', 'r') as f:
+    
+    with open('resources/json/srd_api.json', 'r') as f:
         info = json.load(f)
+    
+    #Concatenating all variables into one readable spell name and formating it
     spellName = (f'{op1} {op2} {op3} {op4} {op5}')
+    
     spellName = spellName.strip()
-    if spellName.count(' ') > 0:
-        spellName = tital.titalize(spellName)
+    
+    #base url for the spell api
+    base = 'https://www.dnd5eapi.co'
+    
+    #Titalize function breaks with single word spells so we check for multiple spaces
+    #indicating multile words
+    if spellName.count(' ') > 1:
+        name = tital.titalize(spellName)
     else:
-        spellName = spellName.title()
+        name = spellName.title()
     
-    
-    for spell in info['spells']:
-        if spell['name'] == spellName:
-            spellBlock = (f"""\n
-`Spell Name`: **{spell['name']}**
-`Source Book`: __***{spell['source']}***__
-`Base Level`: *{spell['level']}*
-`Spell Description`: *{spell['desc']}*
-`Range`: __***{spell['range']}***__
-`Casting Time`: __***{spell['casting_time']}***__
-`Duration`: __***{spell['duration']}***__
-`School`: {spell['school']}
-`Spell Classes`: *{spell['class']}*
+    #For loop to check if the spell that was input matches a spell in the api
+    for spell in info['results']:
+        
+        if name == spell['name']:
+            endpoint = spell['url']
+            url = (f'{base}{endpoint}')
+            response = requests.get(url)
+            new_str = json.loads(response.text)
+            
+            with open('resources/json/temp_spell_file.json', 'w') as g:
+                json.dump(new_str, g, indent=4)
+            
+            with open('resources/json/temp_spell_file.json', 'r') as h:
+                spell_info = json.load(h)
+            
+            Spell_block = (f"""
+Spell Name: {spell_info['name']}
+Spell Desc: {spell_info['desc'][0]}
+                           """)
+            
+            await ctx.respond(Spell_block)
+        else:
+            ctx.respond('Im sorry, but I cant seem to find that spell.')   
 
-""")
-            await ctx.respond(spellBlock)
+
+
 
 def load(bot: lightbulb.BotApp) -> None:
         bot.add_plugin(plugin)
