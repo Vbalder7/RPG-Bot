@@ -13,8 +13,8 @@ decided to make it Easier.
 
 ## Current Version
 
-RPG Bot Is Currently In Version (0.1.4.dev100), as of
-Saturday, Febuary 5, 2022.
+RPG Bot Is Currently In Version (0.1.5), as of
+Tuesday, Febuary 8, 2022.
 
 ## Changelog
 
@@ -64,7 +64,7 @@ we use [d20](https://pypi.org/project/d20/) for our dice rolling.
 
 ## Examples
 
-```py
+```python
 >>> r = roll("4d6kh3")  # highest 3 of 4 6-sided dice
 >>> r.total
 14
@@ -102,6 +102,10 @@ Added the ability to roll Fate Core dice with `+ = +1` `- = -1` and the empty si
 
 Added spell lookup command, but the file containing all the spell data is not complete
 so you will get a lot of filler text
+
+## Version (0.1.5)
+
+Finished spell lookup command, but only works with srd spells for now.
 
 ## Deployment
 
