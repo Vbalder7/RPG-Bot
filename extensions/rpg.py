@@ -127,15 +127,19 @@ async def spell_lookup(ctx) -> None:
             
             with open('resources/json/temp_spell_file.json', 'r') as h:
                 spell_info = json.load(h)
-            
-            Spell_block = (f"""
-Spell Name: {spell_info['name']}
-Spell Desc: {spell_info['desc'][0]}
-                           """)
-            
-            await ctx.respond(Spell_block)
-        else:
-            ctx.respond('Im sorry, but I cant seem to find that spell.')   
+                
+            spellBlock = (f"""\n
+`Spell Name`: **{spell_info['name']}**
+`Base Level`: *{spell_info['level']}*
+`Components`: *{spell_info['components']}*
+`Spell Description`: *{spell_info['desc'][0]}*
+`Range`: __***{spell_info['range']}***__
+`Casting Time`: __***{spell_info['casting_time']}***__
+`Duration`: __***{spell_info['duration']}***__
+`School`: {spell_info['school']['name']}
+`Concentration`: *{spell_info['concentration']}*
+""")
+            await ctx.respond(spellBlock)  
 
 
 
