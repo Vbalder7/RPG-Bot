@@ -38,7 +38,7 @@ from config import Config
 bot = lb.BotApp(token = Config.TOKEN,
                 owner_ids=Config.OWNER_ID,
                 default_enabled_guilds=Config.GUILD_ID,
-                prefix='-',
+                prefix='$',
                 case_insensitive_prefix_commands=True
                 )
 
@@ -75,7 +75,7 @@ async def on_stopping(event: hikari.StoppingEvent) -> None:
 
 def Run():
     bot.run(activity=hikari.Activity(
-                name=f"-help|Version={Config.VERSION}",
+                name=f"$help|Version={Config.VERSION}",
                 type=hikari.ActivityType.WATCHING,
             )
         )
