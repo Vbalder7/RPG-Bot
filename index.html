@@ -1,12 +1,12 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG-Bot Docs</title>
-</head>
-<body>
-    <h1 id="rpg-bot">RPG Bot</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPG-Bot Docs</title>
+    </head>
+    <body>
+        <h1 id="rpg-bot">RPG Bot</h1>
 
         <p>We are dedicated to making a discord bot that is used for any TTRPG (Table Top Role Playing Game), and since we are all facing these troubling times we might find ourselves playing these games online. So we decided to make it Easier.</p>
         <h2 id="current-version">Current Version</h2>
@@ -17,120 +17,123 @@
         <h3 id="version-011">Version (0.1.1)</h3>
         <p>Added some admin commands for shutdown functionality.</p>
         <h3 id="version-012">Version (0.1.2)</h3>
-        <p>Added dice rolling capability we use <a href="https://pypi.org/project/d20/">d20</a> for our dice rolling.</p>
+        <p>Added dice rolling capability we use
+            <a href="https://pypi.org/project/d20/">d20</a>
+            for our dice rolling.</p>
         <h2 id="operators">Operators</h2>
         <table>
-        <thead>
-        <tr class="header">
-        <th>Syntax</th>
-        <th>Name</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>k</td>
-        <td>keep</td>
-        <td>Keeps all matched values.</td>
-        </tr>
-        <tr class="even">
-        <td>p</td>
-        <td>drop</td>
-        <td>Drops all matched values.</td>
-        </tr>
-        <tr class="odd">
-        <td>rr</td>
-        <td>re-roll</td>
-        <td>Rerolls all matched values until none match. (Dice only)</td>
-        </tr>
-        <tr class="even">
-        <td>ro</td>
-        <td>re-role once</td>
-        <td>Rerolls all matched values once. (Dice only)</td>
-        </tr>
-        <tr class="odd">
-        <td>ra</td>
-        <td>reroll and add</td>
-        <td>Rerolls up to one matched value once, keeping the original roll. (Dice only)</td>
-        </tr>
-        <tr class="even">
-        <td>e</td>
-        <td>explode on</td>
-        <td>Rolls another die for each matched value. (Dice only)</td>
-        </tr>
-        <tr class="odd">
-        <td>mi</td>
-        <td>minimum</td>
-        <td>Sets the minimum value of each die. (Dice only)</td>
-        </tr>
-        <tr class="even">
-        <td>ma</td>
-        <td>maximum</td>
-        <td>Sets the maximum value of each die. (Dice only)</td>
-        </tr>
-        </tbody>
+            <thead>
+                <tr class="header">
+                    <th>Syntax</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>k</td>
+                    <td>keep</td>
+                    <td>Keeps all matched values.</td>
+                </tr>
+                <tr class="even">
+                    <td>p</td>
+                    <td>drop</td>
+                    <td>Drops all matched values.</td>
+                </tr>
+                <tr class="odd">
+                    <td>rr</td>
+                    <td>re-roll</td>
+                    <td>Rerolls all matched values until none match. (Dice only)</td>
+                </tr>
+                <tr class="even">
+                    <td>ro</td>
+                    <td>re-role once</td>
+                    <td>Rerolls all matched values once. (Dice only)</td>
+                </tr>
+                <tr class="odd">
+                    <td>ra</td>
+                    <td>reroll and add</td>
+                    <td>Rerolls up to one matched value once, keeping the original roll. (Dice only)</td>
+                </tr>
+                <tr class="even">
+                    <td>e</td>
+                    <td>explode on</td>
+                    <td>Rolls another die for each matched value. (Dice only)</td>
+                </tr>
+                <tr class="odd">
+                    <td>mi</td>
+                    <td>minimum</td>
+                    <td>Sets the minimum value of each die. (Dice only)</td>
+                </tr>
+                <tr class="even">
+                    <td>ma</td>
+                    <td>maximum</td>
+                    <td>Sets the maximum value of each die. (Dice only)</td>
+                </tr>
+            </tbody>
         </table>
         <h2 id="selectors">Selectors</h2>
         <table>
-        <thead>
-        <tr class="header">
-        <th>Syntax</th>
-        <th>Name</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>X</td>
-        <td>literal</td>
-        <td>All values in this set that are literally this value.</td>
-        </tr>
-        <tr class="even">
-        <td>hX</td>
-        <td>highest X</td>
-        <td>The highest X values in the set.</td>
-        </tr>
-        <tr class="odd">
-        <td>lX</td>
-        <td>lowest X</td>
-        <td>The lowest X values in the set.</td>
-        </tr>
-        <tr class="even">
-        <td>&gt;X</td>
-        <td>greater than X</td>
-        <td>All values in this set greater than X.</td>
-        </tr>
-        <tr class="odd">
-        <td>&lt;X</td>
-        <td>less than X</td>
-        <td>All values in this set less than X.</td>
-        </tr>
-        </tbody>
+            <thead>
+                <tr class="header">
+                    <th>Syntax</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>X</td>
+                    <td>literal</td>
+                    <td>All values in this set that are literally this value.</td>
+                </tr>
+                <tr class="even">
+                    <td>hX</td>
+                    <td>highest X</td>
+                    <td>The highest X values in the set.</td>
+                </tr>
+                <tr class="odd">
+                    <td>lX</td>
+                    <td>lowest X</td>
+                    <td>The lowest X values in the set.</td>
+                </tr>
+                <tr class="even">
+                    <td>&gt;X</td>
+                    <td>greater than X</td>
+                    <td>All values in this set greater than X.</td>
+                </tr>
+                <tr class="odd">
+                    <td>&lt;X</td>
+                    <td>less than X</td>
+                    <td>All values in this set less than X.</td>
+                </tr>
+            </tbody>
         </table>
         <h2 id="unary-operations">Unary Operations</h2>
         <table>
-        <thead>
-        <tr class="header">
-        <th>Syntax</th>
-        <th>Name</th>
-        <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>+X</td>
-        <td>positive</td>
-        <td>Does nothing.</td>
-        </tr>
-        <tr class="even">
-        <td>-X</td>
-        <td>negative</td>
-        <td>The negative value of X.</td>
-        </tr>
-        </tbody>
+            <thead>
+                <tr class="header">
+                    <th>Syntax</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>+X</td>
+                    <td>positive</td>
+                    <td>Does nothing.</td>
+                </tr>
+                <tr class="even">
+                    <td>-X</td>
+                    <td>negative</td>
+                    <td>The negative value of X.</td>
+                </tr>
+            </tbody>
         </table>
         <h2 id="examples">Examples</h2>
-        <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> r <span class="op">=</span> roll(<span class="st">&quot;4d6kh3&quot;</span>)  <span class="co"># highest 3 of 4 6-sided dice</span></span>
+        <div class="sourceCode" id="cb1">
+            <pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> r <span class="op">=</span> roll(<span class="st">&quot;4d6kh3&quot;</span>)  <span class="co"># highest 3 of 4 6-sided dice</span></span>
         <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> r.total</span>
         <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="dv">14</span></span>
         <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(r)</span>
@@ -152,24 +155,35 @@
         <span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> r.total</span>
         <span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="dv">3</span></span>
         <span id="cb1-22"><a href="#cb1-22" aria-hidden="true"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(r)</span>
-        <span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a><span class="co">&#39;(1d4 (2) + 1, ~~3~~, ~~2d6kl1 (2, 5)~~)kh1 = `3`&#39;</span></span></code></pre></div>
+        <span id="cb1-23"><a href="#cb1-23" aria-hidden="true"></a><span class="co">&#39;(1d4 (2) + 1, ~~3~~, ~~2d6kl1 (2, 5)~~)kh1 = `3`&#39;</span></span></code></pre>
+        </div>
         <h3 id="version-013">Version (0.1.3)</h3>
         <p>Now it is Possible to generate new character stats using the -randchar command</p>
         <h3 id="version-014">Version (0.1.4)</h3>
-        <p>Added the ability to roll Fate Core dice with <code>+ = +1</code> <code>- = -1</code> and the empty side is represented as a 0 the syntax is -r fc +mod ex:<code>-r fc +3</code> output ex:<code>-1, -1, +1, 0, +3</code></p>
+        <p>Added the ability to roll Fate Core dice with
+            <code>+ = +1</code>
+            <code>- = -1</code>
+            and the empty side is represented as a 0 the syntax is -r fc +mod ex:<code>-r fc +3</code>
+            output ex:<code>-1, -1, +1, 0, +3</code>
+        </p>
         <h3 id="version-014dev100">Version (0.1.4.dev100)</h3>
         <p>Added spell lookup command, but the file containing all the spell data is not complete so you will get a lot of filler text</p>
         <h2 id="version-015">Version (0.1.5)</h2>
         <p>Finished spell lookup command, but only works with srd spells for now.</p>
         <h2 id="deployment">Deployment</h2>
         <p>To deploy this project Create a .env file in the root directory that should look something like this</p>
-        <div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>TOKEN<span class="op">=</span><span class="st">&quot;Your Token &quot;</span></span>
+        <div class="sourceCode" id="cb2">
+            <pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a>TOKEN<span class="op">=</span><span class="st">&quot;Your Token &quot;</span></span>
         <span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>GUILD_ID<span class="op">=</span><span class="dv">123456</span> <span class="co"># Must be an int</span></span>
         <span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>OWNER_ID<span class="op">=</span><span class="dv">789123</span> <span class="co"># Must be an int</span></span>
-        <span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>VERSION<span class="op">=</span><span class="st">&quot;0.0.0&quot;</span> <span class="co"># Must be a str </span></span></code></pre></div>
+        <span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>VERSION<span class="op">=</span><span class="st">&quot;0.0.0&quot;</span> <span class="co"># Must be a str </span></span></code></pre>
+        </div>
         <p>with which ever evironment variables you want to create. Just make sure you define them in your config.py file. Variables must be all caps in .env as well as config.py.</p>
-        <p>If you want to run this bot 24/7 go to heroku and upload this project to a github repo, then build the app and go to the resources tab and start the <strong>main</strong>.py option</p>
-        <p>Or you can just <a href="https://discord.com/api/oauth2/authorize?client_id=722335475976634539&amp;permissions=8&amp;scope=bot%20applications.commands">Add to Server</a></p>
+        <p>If you want to run this bot 24/7 go to heroku and upload this project to a github repo, then build the app and go to the resources tab and start the
+            <strong>main</strong>.py option</p>
+        <p>Or you can just
+            <a href="https://discord.com/api/oauth2/authorize?client_id=722335475976634539&amp;permissions=8&amp;scope=bot%20applications.commands">Add to Server</a>
+        </p>
 
-</body>
+    </body>
 </html>
