@@ -1,4 +1,3 @@
-
 # RPG Bot
 
 <p align="center">
@@ -34,33 +33,33 @@ we use [d20](https://pypi.org/project/d20/) for our dice rolling.
 
 ## Operators
 
-| Syntax | Name | Description |
-|---|---|---|
-| k | keep | Keeps all matched values. |
-| p | drop | Drops all matched values. |
-| rr | re-roll | Rerolls all matched values until none match. (Dice only) |
-| ro | re-role once | Rerolls all matched values once. (Dice only) |
-| ra | reroll and add | Rerolls up to one matched value once, keeping the original roll. (Dice only) |
-| e | explode on | Rolls another die for each matched value. (Dice only) |
-| mi | minimum | Sets the minimum value of each die. (Dice only) |
-| ma | maximum | Sets the maximum value of each die. (Dice only) |
+| Syntax | Name           | Description                                                                  |
+| ------ | -------------- | ---------------------------------------------------------------------------- |
+| k      | keep           | Keeps all matched values.                                                    |
+| p      | drop           | Drops all matched values.                                                    |
+| rr     | re-roll        | Rerolls all matched values until none match. (Dice only)                     |
+| ro     | re-role once   | Rerolls all matched values once. (Dice only)                                 |
+| ra     | reroll and add | Rerolls up to one matched value once, keeping the original roll. (Dice only) |
+| e      | explode on     | Rolls another die for each matched value. (Dice only)                        |
+| mi     | minimum        | Sets the minimum value of each die. (Dice only)                              |
+| ma     | maximum        | Sets the maximum value of each die. (Dice only)                              |
 
 ## Selectors
 
-| Syntax | Name | Description |
-|---|---|---|
-| X | literal | All values in this set that are literally this value. |
-| hX | highest X | The highest X values in the set. |
-| lX | lowest X | The lowest X values in the set. |
-| >X | greater than X | All values in this set greater than X. |
-| <X | less than X | All values in this set less than X. |
+| Syntax | Name           | Description                                           |
+| ------ | -------------- | ----------------------------------------------------- |
+| X      | literal        | All values in this set that are literally this value. |
+| hX     | highest X      | The highest X values in the set.                      |
+| lX     | lowest X       | The lowest X values in the set.                       |
+| >X     | greater than X | All values in this set greater than X.                |
+| <X     | less than X    | All values in this set less than X.                   |
 
 ## Unary Operations
 
-| Syntax | Name | Description |
-|---|---|---|
-| +X | positive | Does nothing. |
-| -X | negative | The negative value of X. |
+| Syntax | Name     | Description              |
+| ------ | -------- | ------------------------ |
+| +X     | positive | Does nothing.            |
+| -X     | negative | The negative value of X. |
 
 ## Examples
 
@@ -96,7 +95,7 @@ Now it is Possible to generate new character stats using the -randchar command
 
 ### Version (0.1.4)
 
-Added the ability to roll Fate Core dice with `+ = +1` `- = -1` and the empty side is represented as a 0 the syntax is -r fc +mod  ex:`-r fc +3` output ex:`-1, -1, +1, 0, +3`
+Added the ability to roll Fate Core dice with `+ = +1` `- = -1` and the empty side is represented as a 0 the syntax is -r fc +mod ex:`-r fc +3` output ex:`-1, -1, +1, 0, +3`
 
 ### Version (0.1.4.dev100)
 
@@ -115,11 +114,11 @@ To deploy this project Create a .env file in the root directory that should look
 TOKEN="Your Token "
 GUILD_ID=123456 # Must be an int
 OWNER_ID=789123 # Must be an int
-VERSION="0.0.0" # Must be a str 
+VERSION="0.0.0" # Must be a str
 ```
 
 with which ever evironment variables you want to create. Just make sure you define them in your config.py file. Variables must be all caps in .env as well as config.py.
 
-If you want to run this bot 24/7 go to heroku and upload this project to a github repo, then build the app and go to the resources tab and start the __main__.py option
+If you want to run this bot 24/7 go to heroku and upload this project to a github repo, then build the app and go to the resources tab and start the **main**.py option
 
 Or you can just [Add to Server](https://discord.com/api/oauth2/authorize?client_id=722335475976634539&permissions=8&scope=bot%20applications.commands)
