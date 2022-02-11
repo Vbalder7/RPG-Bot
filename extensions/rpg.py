@@ -32,8 +32,9 @@ import random
 import d20
 import lightbulb
 import requests
-from functions import tital
 from hikari import Guild
+
+from functions import tital
 
 plugin = lightbulb.Plugin('RPG')
 
