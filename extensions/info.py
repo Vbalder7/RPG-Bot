@@ -26,11 +26,10 @@
 #OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 #OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from contextvars import Context
-import lightbulb
 import hikari
-from config import Config
+import lightbulb
 
+from config import Config
 
 plugin = lightbulb.Plugin("Info")
 

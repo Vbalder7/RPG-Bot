@@ -29,7 +29,8 @@
 #OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import os
-from typing import get_type_hints, Union
+from typing import Union, get_type_hints
+
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -26,9 +26,15 @@
 #OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 #OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import lightbulb,d20,random,json,requests
-from functions import tital
+import json
+import random
+
+import d20
+import lightbulb
+import requests
 from hikari import Guild
+
+from functions import tital
 
 plugin = lightbulb.Plugin('RPG')
 

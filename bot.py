@@ -30,11 +30,11 @@ import logging as log
 
 import hikari
 import lightbulb as lb
-
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from pytz import timezone,utc
+from pytz import timezone, utc
+
 from config import Config
-    
+
 bot = lb.BotApp(token = Config.TOKEN,
                 owner_ids=Config.OWNER_ID,
                 default_enabled_guilds=Config.GUILD_ID,
