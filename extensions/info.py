@@ -28,7 +28,6 @@
 
 import hikari
 import lightbulb
-
 from config import Config
 
 plugin = lightbulb.Plugin("Info")
