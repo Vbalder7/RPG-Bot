@@ -63,14 +63,13 @@ async def cmd_FC(ctx: lightbulb.Context) -> None:
 
     dice = ['+1', '-1', '0', '+1', '-1', '0']
     op1 = ctx.options.op1
-    x = [random.randint(1, 5) for i in range(4)]
-    a, b, c, d = x[0], x[1], x[2], x[3]
+    x = [random.choices(dice, k=4)]
     if op1 != '':
-        totals = (f'{dice[a]}, {dice[b]}, {dice[c]}, {dice[d]}, {op1}')
+        totals = (",".join(f'{i}' for i in x) + op1)
         await ctx.respond(totals)
     else:
-        totals = (f'{dice[a]}, {dice[b]}, {dice[c]}, {dice[c]}')
-        await ctx.respond(totals)
+        totals = (",".join(f'{i}' for i in x))
+        await ctx.respond(totals, reply=True, mentions_reply=True)
 
 # Command to generate random Character Stats
 
@@ -102,17 +101,17 @@ async def cmd_randchar(ctx) -> None:
 async def spell_lookup(ctx) -> None:
 
     # defining variables with the input for the command
-    op1, op2, op3, op4, op5 = [ctx.options.op1,
-                               ctx.options.op2,
-                               ctx.options.op3,
-                               ctx.options.op4,
-                               ctx.options.op5]
+    options = [ctx.options.op1,
+               ctx.options.op2,
+               ctx.options.op3,
+               ctx.options.op4,
+               ctx.options.op5]
 
     with open('resources/json/srd_api.json', 'r') as f:
         info = json.load(f)
 
     # Concatenating all variables into one readable spell name and formating it
-    spellName = (f'{op1} {op2} {op3} {op4} {op5}')
+    spellName = (" ".join(f'{i}' for i in options))
 
     spellName = spellName.strip()
 
