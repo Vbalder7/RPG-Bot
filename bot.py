@@ -35,52 +35,49 @@ from pytz import timezone, utc
 
 from config import Config
 
-bot = lb.BotApp(token=Config.TOKEN,
-                owner_ids=Config.OWNER_ID,
-                default_enabled_guilds=Config.GUILD_ID,
-                prefix='$',
-                case_insensitive_prefix_commands=True
-                )
 
-scheduler = AsyncIOScheduler()
+def App() -> None:
 
+    bot = lb.BotApp(token=Config.TOKEN,
+                    owner_ids=Config.OWNER_ID,
+                    default_enabled_guilds=Config.GUILD_ID,
+                    prefix='$',
+                    case_insensitive_prefix_commands=True
+                    )
 
-@bot.listen(lb.CommandErrorEvent)
-async def on_error(event: lb.CommandErrorEvent) -> None:
+    scheduler = AsyncIOScheduler()
 
-    exception = event.exception
+    @bot.listen(lb.CommandErrorEvent)
+    async def on_error(event: lb.CommandErrorEvent) -> None:
 
-    if isinstance(exception, lb.NotOwner):
-        await event.context.respond("You are not the owner of this bot.")
-    elif isinstance(exception, lb.CommandNotFound):
-        await event.context.respond("I'm sorry, but I cannot find that command.")
-    elif isinstance(exception, lb.NotEnoughArguments):
-        await event.context.respond("You have not input all the required arguments.")
-    else:
-        raise exception
+        exception = event.exception
 
+        if isinstance(exception, lb.NotOwner):
+            await event.context.respond("You are not the owner of this bot.")
+        elif isinstance(exception, lb.CommandNotFound):
+            await event.context.respond("I'm sorry, but I cannot find that command.")
+        elif isinstance(exception, lb.NotEnoughArguments):
+            await event.context.respond("You have not input all the required arguments.")
+        else:
+            raise exception
 
-@bot.listen(hikari.StartingEvent)
-async def on_starting(event: hikari.StartingEvent) -> None:
-    bot.load_extensions_from("extensions")
+    @bot.listen(hikari.StartingEvent)
+    async def on_starting(event: hikari.StartingEvent) -> None:
+        bot.load_extensions_from("extensions")
 
+    @bot.listen(hikari.StartedEvent)
+    async def on_started(event: hikari.StartedEvent) -> None:
+        scheduler.configure(timezone=utc)
+        scheduler.start()
+        log.info('BOT READY!')
 
-@bot.listen(hikari.StartedEvent)
-async def on_started(event: hikari.StartedEvent) -> None:
-    scheduler.configure(timezone=utc)
-    scheduler.start()
-    log.info('BOT READY!')
+    @bot.listen(hikari.StoppingEvent)
+    async def on_stopping(event: hikari.StoppingEvent) -> None:
+        scheduler.shutdown()
+        log.info('BOT IS DEAD!')
 
-
-@bot.listen(hikari.StoppingEvent)
-async def on_stopping(event: hikari.StoppingEvent) -> None:
-    scheduler.shutdown()
-    log.info('BOT IS DEAD!')
-
-
-def Run():
     bot.run(activity=hikari.Activity(
-        name=f"$help|Version={Config.VERSION}",
-        type=hikari.ActivityType.WATCHING,
-    )
-    )
+            name=f"$help|Version={Config.VERSION}",
+            type=hikari.ActivityType.WATCHING,
+            )
+            )
