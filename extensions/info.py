@@ -29,8 +29,6 @@
 import hikari
 import lightbulb
 
-from config import Config
-
 plugin = lightbulb.Plugin("Info")
 
 
@@ -47,6 +45,8 @@ async def info_group(ctx: lightbulb.Context) -> None:
     if not (member := ctx.member):
         return
 
+    OWNER_ID=554078653726588930
+
     await ctx.respond(
         hikari.Embed(
             title="About RPG Bot",
@@ -60,7 +60,7 @@ decided to make it Easier."""
         .set_author(name="Information")
         .set_footer(f"Requested by {member.display_name}", icon=member.avatar_url)
         .add_field("Source Code", "<https://github.com/Vbalder7/RPG-Bot>")
-        .add_field("Authors", (f"<@{Config.OWNER_ID}>"))
+        .add_field("Authors", (f"<@{OWNER_ID}>"))
         .add_field(
             "License",
             '[BSD 3-Clause "New" or "Revised" License]'
