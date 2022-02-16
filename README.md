@@ -4,8 +4,8 @@
     <img src="resources/pictures/logo (1).png" alt="Image" width="200" height="200" />
 </p>
 
-<p align="left">
-    <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=for-the-badge">
+<p align="center">
+    <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=for-the-badge&color=blue">
     <img src="https://img.shields.io/github/languages/top/Vbalder7/RPG-Bot?style=for-the-badge">
     <img src="https://img.shields.io/github/repo-size/Vbalder7/RPG-Bot?label=RPG-Bot%20Size&style=for-the-badge">
     <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=for-the-badge">
