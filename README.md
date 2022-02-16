@@ -3,21 +3,21 @@
 <p align="center">
     <img src="resources/pictures/logo (1).png" alt="Image" width="200" height="200" />
 </p>
-<details>
-    <p align="left">
-        <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=for-the-badge">
-        <img src="https://img.shields.io/github/languages/top/Vbalder7/RPG-Bot?style=for-the-badge">
-        <img src="https://img.shields.io/github/repo-size/Vbalder7/RPG-Bot?label=RPG-Bot%20Size&style=for-the-badge">
-        <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=for-the-badge">
-        <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-    </p>
-    We are dedicated to making a discord bot
-    that is used for any TTRPG (Table Top Role Playing Game),
-    and since we are all facing these troubling times we might find
-    ourselves playing these games online. So we
-    decided to make it Easier.
-<details/>
+
+<p align="left">
+    <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/top/Vbalder7/RPG-Bot?style=for-the-badge">
+    <img src="https://img.shields.io/github/repo-size/Vbalder7/RPG-Bot?label=RPG-Bot%20Size&style=for-the-badge">
+    <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=for-the-badge">
+    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+</p>
+We are dedicated to making a discord bot
+that is used for any TTRPG (Table Top Role Playing Game),
+and since we are all facing these troubling times we might find
+ourselves playing these games online. So we
+decided to make it Easier.
+
 ## Current Version
 
 RPG Bot Is Currently In Version (0.1.5), as of
