@@ -25,8 +25,8 @@ decided to make it Easier.
 
 ## Current Version
 
-RPG Bot Is Currently In Version (0.1.5), as of
-Febuary 8, 2022.
+RPG Bot Is Currently In Version (0.1.6), as of
+Febuary 17, 2022.
 
 ## Changelog
 
