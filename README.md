@@ -11,6 +11,7 @@
     <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=for-the-badge">
     <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+    <img src="https://img.shields.io/github/v/release/Vbalder7/Rpg-Bot">
 </p>
 We are dedicated to making a discord bot
 that is used for any TTRPG (Table Top Role Playing Game),
