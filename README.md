@@ -5,12 +5,12 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=for-the-badge&color=blue">
-    <img src="https://img.shields.io/github/languages/top/Vbalder7/RPG-Bot?style=for-the-badge">
-    <img src="https://img.shields.io/github/repo-size/Vbalder7/RPG-Bot?label=RPG-Bot%20Size&style=for-the-badge">
-    <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=for-the-badge">
-    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+    <img src="https://img.shields.io/github/license/Vbalder7/RPG-Bot?style=flat&color=blue">
+    <img src="https://img.shields.io/github/languages/top/Vbalder7/RPG-Bot?style=flat">
+    <img src="https://img.shields.io/github/repo-size/Vbalder7/RPG-Bot?label=RPG-Bot%20Size&style=flat">
+    <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=flat">
+    <img src="https://img.shields.io/badge/Heroku-430098?style=flat&logo=heroku&logoColor=white">
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black">
     <img src="https://img.shields.io/github/v/release/Vbalder7/Rpg-Bot">
 </p>
 We are dedicated to making a discord bot
