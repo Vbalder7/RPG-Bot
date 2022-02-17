@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/github/last-commit/Vbalder7/RPG-Bot?color=blue&style=flat-square">
     <img src="https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=heroku&logoColor=white">
     <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black">
-    <img src="https://img.shields.io/github/v/release/Vbalder7/Rpg-Bot?style=flat-square">
+    <img src="https://img.shields.io/github/v/release/Vbalder7/RPG-Bot?style=flat-square">
     <img src="https://img.shields.io/github/commits-since/Vbalder7/Rpg-Bot/latest?include_prereleases&sort=semver&style=flat-square">
     <img src="https://img.shields.io/github/release-date/Vbalder7/RPG-Bot?style=flat-square">
     <img src="https://img.shields.io/pypi/pyversions/hikari?style=flat-square">
