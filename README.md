@@ -119,6 +119,10 @@ so you will get a lot of filler text
 
 Finished spell lookup command, but only works with srd spells for now.
 
+## Version (0.1.6)
+
+Added quality of life feature. Now to roll with advantage type -r adv.
+
 ## Deployment
 
 To deploy this project Create a .env file in the root directory that should look something like this
