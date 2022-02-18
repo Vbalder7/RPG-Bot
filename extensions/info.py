@@ -45,7 +45,7 @@ async def info_group(ctx: lightbulb.Context) -> None:
     if not (member := ctx.member):
         return
 
-    OWNER_ID=554078653726588930
+    OWNER_ID = 554078653726588930
 
     await ctx.respond(
         hikari.Embed(
