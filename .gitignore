@@ -173,3 +173,4 @@ secrets
 .venv
 __pycache__
 *.zip
+.vscode
