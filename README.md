@@ -123,6 +123,8 @@ Finished spell lookup command, but only works with srd spells for now.
 
 Added quality of life feature. Now to roll with advantage type -r adv.
 
+## <img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/000000/external-WIP-miscellany-texts-and-badges-bearicons-outline-color-bearicons.png"/> (Currently Working on a custom NPC generator) <img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/000000/external-WIP-miscellany-texts-and-badges-bearicons-outline-color-bearicons.png"/>
+
 ## Deployment
 
 To deploy this project Create a .env file in the root directory that should look something like this
