@@ -28,7 +28,7 @@ decided to make it Easier.
 RPG Bot Is Currently In Version (0.1.6), as of
 Febuary 17, 2022.
 
-## Changelog
+## <img src="https://img.icons8.com/fluency-systems-filled/48/000000/change.png"/>Changelog<img src="https://img.icons8.com/fluency-systems-filled/48/000000/change.png"/>
 
 ### Version (0.1.0)
 
