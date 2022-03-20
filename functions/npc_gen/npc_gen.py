@@ -28,6 +28,7 @@
 
 from functions.npc_gen.vars import *
 
+
 def generator(gender: str) -> dict:
-    
+
     pass

@@ -26,9 +26,9 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-gender=['Male','Female']
+gender = ['Male', 'Female']
 # Masculine First Names
-mfn=[
+mfn = [
     "Abraxas",
     "Achilles",
     "Adonis",
@@ -129,7 +129,7 @@ mfn=[
     "Zeus"
 ]
 # Feminine First Names
-ffn=[
+ffn = [
     "Acantha",
     "Althea",
     "Andromeda",
@@ -234,7 +234,7 @@ ffn=[
     "Živa"
 ]
 # Last Names
-ln=[
+ln = [
     "Commonseeker",
     "Roughwhirl",
     "Laughingsnout",
@@ -737,7 +737,7 @@ ln=[
     "Goreflower"
 ]
 # Races
-race=[
+race = [
     "Aarokocra",
     "Ansimar",
     "Bugbear",
@@ -766,7 +766,7 @@ race=[
     "Yua-Ti Pureblood"
 ]
 # Alignment
-alignment=[
+alignment = [
     'LG',
     'LN',
     'LE',
@@ -778,7 +778,7 @@ alignment=[
     'CE'
 ]
 # Jobs
-profession=[
+profession = [
     "advocate",
     "astrologer",
     "cartographer",
@@ -946,4 +946,3 @@ profession=[
     "child",
     "housespouse"
 ]
-
