@@ -37,7 +37,6 @@ from config import Config
 
 
 def App() -> None:
-
     """
     this is a doc string
     """
