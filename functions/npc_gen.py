@@ -26,9 +26,39 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from functions.npc_gen.vars import *
+from functions.vars import *
+import random
 
 
-def generator(gender: str) -> dict:
+def generator(*gender: str) -> dict:
+    while gender != "":
+        npc = {
+                "fname":"",
+                "lname":"",
+                "race":"",
+                "alignment":"",
+                "profession":""
+            }
+        
+        gender=gender[0]
 
-    pass
+        if gender.lower() == "male":
+            npc.update({
+                "fname":f"{random.choice(mfn)}",
+                "lname":f"{random.choice(ln)}",
+                "race":f"{random.choice(race)}",
+                "alignment":f"{random.choice(alignment)}",
+                "profession":f"{random.choice(profession)}"
+            })
+            return(npc)
+        elif gender.lower() == "female":
+            npc.update({
+                "fname":f"{random.choice(ffn)}",
+                "lname":f"{random.choice(ln)}",
+                "race":f"{random.choice(race)}",
+                "alignment":f"{random.choice(alignment)}",
+                "profession":f"{random.choice(profession)}"
+            })
+            return(npc)
+        else:
+            return(f"Sorry we do not recognize your input of {gender}")

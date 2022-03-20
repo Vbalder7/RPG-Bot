@@ -35,6 +35,7 @@ import requests
 from hikari import Guild
 
 from functions import tital
+from functions import npc_gen
 
 plugin = lightbulb.Plugin('RPG')
 
@@ -97,6 +98,22 @@ async def cmd_randchar(ctx) -> None:
         stats.append(charstat)
     await ctx.respond(f"These are your new stats {stats}", reply=True, mentions_reply=True)
 
+@plugin.command
+@lightbulb.add_checks(lightbulb.guild_only)
+@lightbulb.option('gender','gender of npc')
+@lightbulb.command('NPC','generates a random npc')
+@lightbulb.implements(lightbulb.PrefixCommand)
+async def npc(ctx) -> None:
+    npc=npc_gen.generator("male")
+    
+    sheet=f"""
+    
+    
+    """
+    
+    await ctx.respond(sheet)
+
+# Find a Spell
 
 @plugin.command
 @lightbulb.add_checks(lightbulb.guild_only)
