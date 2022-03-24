@@ -98,6 +98,8 @@ async def cmd_randchar(ctx) -> None:
         stats.append(charstat)
     await ctx.respond(f"These are your new stats {stats}", reply=True, mentions_reply=True)
 
+# Generate NPC
+
 
 @plugin.command
 @lightbulb.add_checks(lightbulb.guild_only)
