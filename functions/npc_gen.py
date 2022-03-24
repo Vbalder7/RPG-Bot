@@ -33,31 +33,34 @@ import random
 def generator(*gender: str) -> dict:
     while gender != "":
         npc = {
-                "fname":"",
-                "lname":"",
-                "race":"",
-                "alignment":"",
-                "profession":""
-            }
-        
-        gender=gender[0]
+            "fname": "",
+            "lname": "",
+            "race": "",
+            "alignment": "",
+            "profession": "",
+            "sex": ""
+        }
+
+        gender = gender[0]
 
         if gender.lower() == "male":
             npc.update({
-                "fname":f"{random.choice(mfn)}",
-                "lname":f"{random.choice(ln)}",
-                "race":f"{random.choice(race)}",
-                "alignment":f"{random.choice(alignment)}",
-                "profession":f"{random.choice(profession)}"
+                "fname": f"{random.choice(mfn)}",
+                "lname": f"{random.choice(ln)}",
+                "race": f"{random.choice(race)}",
+                "alignment": f"{random.choice(alignment)}",
+                "profession": f"{random.choice(profession)}",
+                "sex": "male"
             })
             return(npc)
         elif gender.lower() == "female":
             npc.update({
-                "fname":f"{random.choice(ffn)}",
-                "lname":f"{random.choice(ln)}",
-                "race":f"{random.choice(race)}",
-                "alignment":f"{random.choice(alignment)}",
-                "profession":f"{random.choice(profession)}"
+                "fname": f"{random.choice(ffn)}",
+                "lname": f"{random.choice(ln)}",
+                "race": f"{random.choice(race)}",
+                "alignment": f"{random.choice(alignment)}",
+                "profession": f"{random.choice(profession)}",
+                "sex": "female"
             })
             return(npc)
         else:

@@ -98,20 +98,38 @@ async def cmd_randchar(ctx) -> None:
         stats.append(charstat)
     await ctx.respond(f"These are your new stats {stats}", reply=True, mentions_reply=True)
 
+
 @plugin.command
 @lightbulb.add_checks(lightbulb.guild_only)
-@lightbulb.option('gender','gender of npc')
-@lightbulb.command('NPC','generates a random npc')
+@lightbulb.option('gender', 'gender of npc', default='')
+@lightbulb.command('NPC', 'generates a random npc')
 @lightbulb.implements(lightbulb.PrefixCommand)
 async def npc(ctx) -> None:
-    npc=npc_gen.generator("male")
-    
-    sheet=f"""
-    
-    
+    rand = ['male', 'female']
+
+    sheet = f"""
+name={npc["fname"]}
+surname={npc["lname"]}
+race={npc["race"]}
+alignment={npc["alignment"]}
+job={npc["profession"]}
+gender={npc["sex"]}
     """
-    
-    await ctx.respond(sheet)
+
+    if ctx.options.gender == '':
+        npc = npc_gen.generator(random.choice(rand))
+        await ctx.respond(sheet)
+        pass
+    elif ctx.options.gender == 'male':
+        npc = npc_gen.generator('male')
+        await ctx.respond(sheet)
+        pass
+    elif ctx.options.gender == 'female':
+        npc = npc_gen.generator('female')
+        await ctx.respond(sheet)
+    else:
+        await ctx.respond(f"Sorry we do not recognize your input of {ctx.options.gender}")
+
 
 # Find a Spell
 

@@ -33,7 +33,8 @@ plugin = lightbulb.Plugin("Info")
 
 
 @plugin.command
-@lightbulb.command('info', 'Gives info about the bot', aliases=('i', 'details'))
+@lightbulb.command('info', 'Gives info about the bot',
+                   aliases=('i', 'details'))
 @lightbulb.implements(lightbulb.PrefixCommandGroup)
 async def info_group(ctx: lightbulb.Context) -> None:
     if not (guild := ctx.get_guild()):
@@ -94,7 +95,7 @@ four corrupt prophets have risen from the depths of anonymity
 to claim mighty weapons with direct links to the power of the elemental princes.
 Each of these prophets has assembled a cadre of cultists and creatures to serve
 them in the construction of four elemental temples of lethal design.
-It is up to adventurers from heroic factions such as the Emerald Enclave 
+It is up to adventurers from heroic factions such as the Emerald Enclave
 and the Order of the Gauntlet to discover where the true power of each prophet lay,
 and dismantle it before it comes boiling up to obliterate the Realms.``` """
     await ctx.respond(ent_summary)

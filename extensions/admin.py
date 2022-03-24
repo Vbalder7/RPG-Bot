@@ -35,7 +35,8 @@ plugin = lightbulb.Plugin("Admin")
 
 @plugin.command
 @lightbulb.add_checks(lightbulb.owner_only)
-@lightbulb.command("shutdown", "Gracefully shuts down RPG Bot", aliases=('sd', 'quit', 'die'))
+@lightbulb.command("shutdown", "Gracefully shuts down RPG Bot",
+                   aliases=('sd', 'quit', 'die'))
 @lightbulb.implements(lightbulb.PrefixCommand)
 async def shutdown_cmd(ctx) -> None:
     await ctx.respond("Shutting down...")
